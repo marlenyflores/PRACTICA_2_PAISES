@@ -49,7 +49,6 @@ function displayCountries(countries) {
 		countriesEl.appendChild(paisesEl);
 	});
 }
-// muestra y oculta los filtros de las etiquetas li
 filterBtn.addEventListener('click', () => {
 	filterBtn.classList.toggle('open');
 });
@@ -71,7 +70,7 @@ searchEl.addEventListener('input', e => {
 	});
 });
 
-// agrega un filtro en el li dentro del .dropdown
+
 regionFilters.forEach(filtro => {
 	filtro.addEventListener('click', () => {
 		const value = filtro.innerText;
